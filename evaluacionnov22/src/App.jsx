@@ -19,7 +19,7 @@ function darLike() {
   return (
     <div className="App">
       <Estatus cantLikes={cantLikes}/>
-      <Posteos likear={darLike}/>
+      <Posteos dar1Like={darLike}/>
     </div>
   );
 }

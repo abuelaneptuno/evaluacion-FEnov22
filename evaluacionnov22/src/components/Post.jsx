@@ -13,11 +13,12 @@ import { useState } from 'react';
 //    button       (este boton debe permitir sumar likes)
 //    h5    (este h5 debe mostrar la cantidad de likes, pero si la misma es mayor a 10 debe decir "Más de 10 likes")
 
-export default function Post({posteo, darLike}) {
+export default function Post({posteo, dar1Like}) {
 const [likes, setLikes] = useState (0);
 
 function darLike(){
-  setLikes((likes) => likes+1)
+  setLikes((likes) => likes+1);
+  dar1Like();
 }
 
   return (
